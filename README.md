@@ -9,3 +9,9 @@ Downloading the upstream repositories (REQUIRED):
 - Change your directory into the server folder `cd SERVER`
 - Pull the latest changes `git pull origin master`
 - Clone upstream repositories `git submodule update --init --recursive`
+
+Setting up a paper development environment:
+- Run `make setup-paper-dev`
+
+Build the server JAR file:
+- Run `make build-paper`
