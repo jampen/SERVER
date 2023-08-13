@@ -12,6 +12,11 @@ build-paper:
 		./gradlew createReobfBundlerJar; \
 	)
 
+	@echo ">>> Setting up build directory"
+	( \
+		sh build-scripts/setup-build-dir.sh; \
+	)
+
 clean:
 	@echo ">>> Deconstructing Paper"
 	( \
