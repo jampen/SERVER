@@ -5,6 +5,8 @@ setup-paper-dev:
 		./gradlew applyPatches; \
 	)
 
+
+# Creates a paper.jar file in a 'build' folder
 build-paper:
 	@echo ">>> Building Paper"
 	( \
