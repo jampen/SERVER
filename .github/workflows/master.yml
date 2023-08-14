@@ -24,7 +24,7 @@ jobs:
           java-version: '17'
       
       - name: Build
-        run: make build-server
+        run: make build-paper
       
   terraform:
     needs: build-server
