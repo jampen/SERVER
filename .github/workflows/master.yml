@@ -26,8 +26,8 @@ jobs:
       - name: Download server repo
         run: git submodule update --init --recursive
 
-      - name: Setup development environment
-        run: make setup-paper-dev
+      #- name: Setup development environment
+      #  run: make setup-paper-dev
 
       - name: Build
         run: make build-paper

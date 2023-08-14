@@ -2,7 +2,6 @@ setup-paper-dev:
 	@echo ">>> Extracting Paper Source Code"
 	( \
 		cd Paper; \
-		ls; \
 		./gradlew applyPatches; \
 	)
 
