@@ -12,7 +12,7 @@ build-paper:
 		./gradlew createReobfBundlerJar; \
 	)
 
-	@echo ">>> Setting up build directory"
+	@echo ">>> Populating build folder"
 	( \
 		sh build-scripts/setup-build-dir.sh; \
 	)
@@ -23,3 +23,9 @@ clean:
 		cd Paper; \
 		./gradlew clean; \
 	)
+
+	@echo ">>> Deleting build folder"
+	( \
+		rm -rf build; \
+	)
+	

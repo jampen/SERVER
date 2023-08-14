@@ -15,3 +15,5 @@ Setting up a paper development environment:
 
 Build the server JAR file:
 - Run `make build-paper`
+
+After following these steps, there should be in your build folder, a `paper.jar` (the server executable) and a `eula.txt`.
