@@ -1,7 +1,6 @@
 setup-paper-dev:
 	@echo ">>> Extracting Paper Source Code"
 	( \
-		ls; \
 		cd Paper; \
 		ls; \
 		./gradlew applyPatches; \
@@ -12,9 +11,7 @@ setup-paper-dev:
 build-paper:
 	@echo ">>> Building Paper"
 	( \
-		ls; \
 		cd Paper; \
-		ls; \
 		./gradlew createReobfBundlerJar; \
 	)
 
