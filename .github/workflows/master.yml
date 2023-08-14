@@ -23,6 +23,9 @@ jobs:
           distribution: 'zulu' #
           java-version: '17'
       
+      - name: Setup development environment
+        run: make setup-paper-dev
+
       - name: Build
         run: make build-paper
       
