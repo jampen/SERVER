@@ -26,6 +26,11 @@ jobs:
       - name: Download server repo
         run: git submodule update --init --recursive
 
+      - name: Generate Subprojects and Build Paper
+        run: |
+          cd Paper
+          ./gradlew build
+
       - name: Assemble Paper (paper-api)
         run: cd Paper/paper-api && ./gradlew assemble
 
