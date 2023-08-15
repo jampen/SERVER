@@ -42,13 +42,13 @@ jobs:
           ./gradlew build
 
       - name: Assemble Paper (paper-api)
-        run: cd Paper/paper-api && ./gradlew assemble
+        run: cd Paper/Paper-API && ./gradlew assemble
 
       - name: Assemble Paper (paper-mojangapi)
-        run: cd Paper/paper-mojangapi && ./gradlew assemble
+        run: cd Paper/paper-MojangAPI && ./gradlew assemble
 
       - name: Assemble Paper (paper-server)
-        run: cd Paper/paper-server && ./gradlew assemble
+        run: cd Paper/Paper-Server && ./gradlew assemble
         
   #terraform:
   #  needs: build-server
