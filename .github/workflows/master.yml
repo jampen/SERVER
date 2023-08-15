@@ -23,21 +23,9 @@ jobs:
           distribution: 'zulu' #
           java-version: '17'
       
-      - name: Set Git identity
-        run: |
-          git config user.email "jamiependergast@gmail.com"
-          git config user.name "Jamie Pendergast"
-
       - name: Download server repo
         run: git submodule update --init --recursive
 
-  
-
-      - name: Check Git configuration
-        run: git config --list
-
-       
-      
       - name: Extract server code to build
         run: make setup-paper-dev
         
