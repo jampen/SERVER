@@ -26,8 +26,14 @@ jobs:
       - name: Download server repo
         run: git submodule update --init --recursive
 
-      - name: Extract server code to build
-        run: ./Paper/gradlew applyPatches --project-dir=Paper
+      - name: Assemble Paper (paper-api)
+        run: cd Paper/paper-api && ./gradlew assemble
+
+      - name: Assemble Paper (paper-mojangapi)
+        run: cd Paper/paper-mojangapi && ./gradlew assemble
+
+      - name: Assemble Paper (paper-server)
+        run: cd Paper/paper-server && ./gradlew assemble
         
   #terraform:
   #  needs: build-server
