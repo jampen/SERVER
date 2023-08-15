@@ -27,7 +27,7 @@ jobs:
         run: git submodule update --init --recursive
 
       - name: Extract server code to build
-        run: ./gradlew applyPatches --project-dir=Paper
+        run: ./Paper/gradlew applyPatches --project-dir=Paper
         
   #terraform:
   #  needs: build-server
