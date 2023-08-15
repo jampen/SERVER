@@ -40,15 +40,6 @@ jobs:
         run: |
           cd Paper
           ./gradlew build
-
-      - name: Assemble Paper (paper-api)
-        run: cd Paper/Paper-API && ./gradlew assemble
-
-      - name: Assemble Paper (paper-mojangapi)
-        run: cd Paper/paper-MojangAPI && ./gradlew assemble
-
-      - name: Assemble Paper (paper-server)
-        run: cd Paper/Paper-Server && ./gradlew assemble
         
   #terraform:
   #  needs: build-server
