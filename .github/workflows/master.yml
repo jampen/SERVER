@@ -25,6 +25,9 @@ jobs:
       
       - name: Download server repo
         run: git submodule update --init --recursive
+
+      - name: Extract server code to build
+        run: make setup-paper-dev
         
   #terraform:
   #  needs: build-server
