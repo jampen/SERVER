@@ -16,6 +16,11 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v3
 
+      - name: Set Git user identity
+        run: |
+          git config --global user.email "you@example.com"
+          git config --global user.name "Your Name"
+
       - name: Setup Java
         uses: actions/setup-java@v3
         with:
