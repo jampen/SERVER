@@ -34,14 +34,9 @@ jobs:
         run: |
           cd Paper
           ./gradlew applyPatches
-
-      - name: Generate Subprojects and Build Paper
-        run: |
-          cd Paper
-          ./gradlew build
-
-      - name: Setup our root level build/ directory (to be uploaded to s3)
-        run: sh build-scripts/setup-build-dir.sh
+      
+      - name: Build paper
+        run: make build-paper
   
   # Deployment:
   terraform:
