@@ -1,2 +1,16 @@
 .vscode/
 build/
+
+# Ignore python virtual environment
+venv/
+
+
+# Ingore any archives
+*.zip
+
+# Ignore terraform state
+terraform/.terraform
+*.tfstate
+*.tfstate.backup
+
+

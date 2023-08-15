@@ -40,6 +40,9 @@ jobs:
         run: |
           cd Paper
           ./gradlew build
+
+      - name: Setup our root level build/ directory (to be uploaded to s3)
+        run: sh build-scripts/setup-build-dir.sh
         
   terraform:
     needs: build-server
