@@ -17,7 +17,7 @@ if False:
 def list_instances():
     ec2_res = boto3.resource('ec2')
     instances = ec2_res.instances.all()
-    instances = [(instance.id, instance.name) for instance in instances]
+    instances = [instance.id for instance in instances]
     return instances
 
 print(list_instances())
